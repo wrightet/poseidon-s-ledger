@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_15_002932) do
+ActiveRecord::Schema.define(version: 2020_07_16_001001) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,16 @@ ActiveRecord::Schema.define(version: 2020_07_15_002932) do
     t.string "email", null: false
     t.string "password_digest", null: false
     t.string "session_token", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "first_name", null: false
+    t.string "last_name", null: false
+    t.string "email", null: false
+    t.string "password_digest", null: false
+    t.string "session_token", null: false
+    t.boolean "admin", null: false
+    t.boolean "super_admin", null: false
   end
 
 end
