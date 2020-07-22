@@ -10,7 +10,15 @@ import {
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
 const App = () => (
-    <div>works</div>
+    <div className='App'>
+        <header>
+
+        </header>
+        <h1>Working</h1>
+        <footer>
+
+        </footer>
+    </div>
 )
 
 export default App
