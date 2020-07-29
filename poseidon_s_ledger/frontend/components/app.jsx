@@ -9,17 +9,32 @@ import {
 } from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from '../util/route_util';
 
-const App = () => (
-    // <div className='App'>
-    //     <header>
+// const App = () => ()
+//     // <div className='App'>
+//     //     <header>
 
-    //     </header>
-    //     <h1>Working</h1>
-    //     <footer>
+//     //     </header>
+//     //     <h1>Working</h1>
+//     //     <footer>
 
-    //     </footer>
-    // </div>
-    <h1>works</h1>
-)
+//     //     </footer>
+//     // </div>
+//     <h1>works</h1>
+// )
+
+class App extends React.Component{
+    constructor(props) {
+        super(props);
+        
+    }
+
+    render(){
+        console.log('hi')
+        return(
+            <h1> hi</h1>
+        )
+    }
+    
+}
 
 export default App;

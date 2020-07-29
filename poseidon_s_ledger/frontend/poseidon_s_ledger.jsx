@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom'
 import configureStore from './store/store'
 import Root from './components/root'
 import App from './components/app'
+console.log('what it do')
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('yo')
     let store;
 
     if (window.currentUser) {
